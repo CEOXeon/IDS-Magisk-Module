@@ -17,4 +17,5 @@ while read -r line; do
 done < "$configfile"
 
 #checking every 30 seconds if sensitive data is present in logs
-watch -n 30 logcat | grep 'Password' > /storage/emulated/0/ids.log
+watch -n 30 logcat | grep $line_1 > /storage/emulated/0/ids.log && watch -n 30 logcat | grep $line_2 > /storage/emulated/0/ids.log && watch -n 30 logcat | grep $line_3 > /storage/emulated/0/ids.log && continue
+

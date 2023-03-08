@@ -5,8 +5,8 @@
 MODDIR=${0%/*}
 
 # This script will be executed in late_start service mode. More info in the main Magisk thread
-#Modify the necessary varible MODDIR with magisk provided  varible eg. /data/adb/modules/Detach
-#sed  -i -e "s/^MODDIR.*$/MODDIR=${MODDIR}/" "$MODDIR/Detach"
+#Modify the necessary varible MODDIR with magisk provided  varible eg. /data/adb/modules/IDS-Magisk-Module
+#sed  -i -e "s/^MODDIR.*$/MODDIR=${MODDIR}/" "$MODDIR/IDS-Magisk-Module"
 
 MAGMOD=$MODDIR
 
