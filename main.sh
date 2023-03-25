@@ -1,7 +1,12 @@
 #!/system/bin/sh
 
 MODDIR=${0%/*}
-configfile=/storage/emulated/0/ids.sh
+configfile=/sdcard/ids/ids.sh
+config_dir=/sdcard/ids
+
+if [ ! -d $config_dir ]; then
+  mkdir $config_dir
+fi
 
 if [ ! -f $configfile ]; then
     touch $configfile
