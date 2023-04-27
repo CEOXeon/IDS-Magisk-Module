@@ -27,7 +27,7 @@ I'am always looking for heros to help me to make IDS-Magisk-Module even better! 
 
 🙋‍♂️🔧💡 Can't code? No problem just create an issue and I will try to implement it.
 
-## License
+## 📜 License
 
 IDS-Magisk-Module is licensed under the MIT License - see the [License file](https://github.com/CEOXeon/IDS-Magisk-Module/blob/main/LICENSE) for details.
 
