@@ -26,8 +26,8 @@ If applicable, add screenshots to help explain your problem.
 ## **Smartphone (please complete the following information):**
  - Device: [e.g. Pixel 5]
  - OS: [e.g. Android 12]
- - Magisk Version [e.g. 22]
- - Module Version [e.g. 1.0]
+ - Magisk Version: [e.g. 22]
+ - Module Version: [e.g. 1.0]
 
 **Additional context**
 Add any other context about the problem here.
