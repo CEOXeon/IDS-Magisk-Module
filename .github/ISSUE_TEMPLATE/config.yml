@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Coming Soon!
+  - name: GitHub Discussion 
     url: https://github.com/orgs/community/discussions
     about: Please ask and answer questions here.
-  - name: Coming Soon!
+  - name: GitHub Bug Bounty Program
     url: https://bounty.github.com/
     about: Please report security vulnerabilities here.
