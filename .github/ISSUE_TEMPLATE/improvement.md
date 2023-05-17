@@ -8,7 +8,7 @@ assignees: ''
 ---
 
 ## **What Feature do you will improve?**
-A clear and concise description of what the feature is that you want that should be improved
+A small and simple description of what the feature is that you want that should be improved
 
 ## **Describe the solution you'd like**
 A clear and concise description of what you want to happen.
