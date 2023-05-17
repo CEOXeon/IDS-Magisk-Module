@@ -8,12 +8,12 @@ assignees: ''
 
 
 body:
-- type: dropdown
-  attributes:
-    label: Magisk Version
-    options:
-      - 26
-      - 25
-      - 24
-  validations:
-    required: true
+  - type: dropdown
+    attributes:
+     label: Magisk Version?
+     options:
+        - 26
+        - 25
+        - 24
+    validations:
+      required: true
