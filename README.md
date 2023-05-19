@@ -14,7 +14,7 @@ Installing IDS-Magisk-Module is as easy as 1-2-3:
 IDS-Magisk-Module comes with a whole bunch of awesome features to help protect your device:
 * 📝 Logcat intrusion detection system (IDS)
 * Coming Soon!
-* Comming Soon!
+* Coming Soon!
 
 ## 🤝 Contributions
 
