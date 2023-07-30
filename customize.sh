@@ -29,9 +29,7 @@ MINAPI=31
 # This is an example
 REPLACE_EXAMPLE="
 /system/app/Youtube
-/system/priv-app/SystemUI
-/system/priv-app/Settings
-/system/framework
+/system/priv-app/BuiltInPrintService
 "
 
 # Construct your own list here
