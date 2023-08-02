@@ -10,15 +10,13 @@ fn main() {
 
 
 
-/// Simple program to greet a person
 #[derive(Parser, Debug)]
 #[command(author, version, about, long_about = None)]
 struct Args {
-    /// Name of the person to greet
+
     #[arg(short, long)]
     name: String,
 
-    /// Number of times to greet
     #[arg(short, long, default_value_t = 1)]
     count: u8,
 }
@@ -70,6 +68,11 @@ fn scan_ports(host: &str, start_port: u16, end_port: u16) -> Vec<u16> {
 }
 
 fn port_scanner() {
+    let target_port_1: u16 = 5555;
+    let target_port_2: u16 = 6666;
+    let target_port_3: u16 = 23;
+    let target_port_4: u16 = 1900;
+
     let host = "127.0.0.1";
     let start_port = 1;
     let end_port = 16384;
@@ -80,8 +83,28 @@ fn port_scanner() {
         println!("No open ports found.");
     } else {
         println!("Open ports:");
-        for port in open_ports {
+        for port in &open_ports {
             println!("Port {} is open", port);
-        }
+        };
+        for port in &open_ports {
+            if port.to_string() == target_port_1.to_string() {
+                println!("Found a match: {}", port);
+            }
+        };
+        for port in &open_ports {
+            if port.to_string() == target_port_2.to_string() {
+                println!("Found a match: {}", port);
+            }
+        };  
+        for port in &open_ports {
+            if port.to_string() == target_port_3.to_string() {
+                println!("Found a match: {}", port);
+            }
+        };
+        for port in &open_ports {
+            if port.to_string() == target_port_4.to_string() {
+                println!("Found a match: {}", port);
+            }
+        };
     }
 }
