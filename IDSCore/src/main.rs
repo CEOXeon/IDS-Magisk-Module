@@ -1,8 +1,10 @@
+#[allow(non_snake_case)]
 use clap::Parser;
 use std::net::{TcpStream, ToSocketAddrs};
 use std::time::Duration;
+use std::collections::HashMap;
+use std::process::Command;
 
-#[allow(non_snake_case)]
 fn main() {
     // println!("Hello, world!");
     clap();
@@ -30,7 +32,7 @@ fn clap() {
         println!("Hi, the M's are meeting.");
     }
       else if args.name == "port" {
-        port_scanner()
+        port_scanner_experimental()
     } else {
         println!("Normal User.");
     }
@@ -108,3 +110,53 @@ fn port_scanner() {
         };
     }
 }
+
+fn port_scanner_experimental() {
+    let mut target_ports: HashMap<u16, Vec<&str>> = HashMap::new();
+    target_ports.insert(5555, vec!["ls", "ls"]);
+    target_ports.insert(6666, vec!["ls"]);
+    target_ports.insert(22, vec!["ls"]);
+    target_ports.insert(1900, vec!["ls"]);
+    
+
+    let host = "127.0.0.1";
+    let start_port = 1;
+    let end_port = 1024;
+
+    let open_ports = scan_ports(host, start_port, end_port);
+
+    if open_ports.is_empty() {
+        println!("No open ports found.");
+    } else {
+        println!("Open ports:");
+        for port in &open_ports {
+            println!("Port {} is open", port);
+
+            if let Some(commands) = target_ports.get(port) {
+                println!("Commands for port {}:", port);
+                for command in commands {
+                    println!(" - {}", command);
+                    
+                    for command in commands {
+                        println!(" - Executing: {}", command);
+                        let output = Command::new("sh ")
+                            .arg("-c")
+                            .arg(command)
+                            .output();
+
+                        match output {
+                            Ok(output) => {
+                                println!("   Output: {:?}", output.stdout);
+                            }
+                            Err(err) => {
+                                eprintln!("   Error executing command: {}", err);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
