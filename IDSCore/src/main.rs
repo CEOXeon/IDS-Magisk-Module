@@ -115,7 +115,7 @@ fn port_scanner_experimental() {
     let mut target_ports: HashMap<u16, Vec<&str>> = HashMap::new();
     target_ports.insert(5555, vec!["ls", "ls"]);
     target_ports.insert(6666, vec!["ls"]);
-    target_ports.insert(22, vec!["ls"]);
+    target_ports.insert(23, vec!["ls"]);
     target_ports.insert(1900, vec!["ls"]);
     
 
