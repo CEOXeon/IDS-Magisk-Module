@@ -68,10 +68,10 @@ fn scan_ports(host: &str, start_port: u16, end_port: u16) -> Vec<u16> {
 }
 
 fn port_scanner() {
-    let target_port_1: u16 = 5555;
-    let target_port_2: u16 = 6666;
-    let target_port_3: u16 = 23;
-    let target_port_4: u16 = 1900;
+    let target_port_1: u16 = 5555; // ADB 
+    let target_port_2: u16 = 6666; // IRC
+    let target_port_3: u16 = 23;   // Telnet
+    let target_port_4: u16 = 1900; // UPnP
 
     let host = "127.0.0.1";
     let start_port = 1;
