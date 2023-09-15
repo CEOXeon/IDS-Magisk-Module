@@ -1,3 +1,10 @@
+# WIP (Work-in-Progress)
+>> Do not expect anything...
+
+Said the author(ceoxeon)
+
+<br>
+
 # 🛡️ IDS-Magisk-Module --- Protecting Your Android with a Superhero Shield 🦸‍♂️
 
 Welcome to IDS-Magisk-Module - a Project designed to boost the security of your Android device fight off the bad guys! 💪
