@@ -1,7 +1,7 @@
 ---
 name: Bug report
 about: Create a report to help us improve
-title: 'BUG --- '
+title: '[BUG]'
 labels: 'bug'
 assignees: ''
 
@@ -29,5 +29,5 @@ If applicable, add screenshots to help explain your problem.
  - Magisk Version: [e.g. 22]
  - Module Version: [e.g. 1.0]
 
-**Additional context**
+## **Additional context**
 Add any other context about the problem here.
