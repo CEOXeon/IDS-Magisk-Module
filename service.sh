@@ -28,4 +28,3 @@ MAGMOD=$MODDIR
 	fi
 	
 )
-
