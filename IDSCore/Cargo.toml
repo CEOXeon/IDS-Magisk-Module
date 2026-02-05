@@ -13,4 +13,4 @@ async-std = "1.13.0"
 clap = { version = "4.5.20", features = ["derive"] }
 clap_complete = "4.5.33"
 futures = "0.3.31"
-time = "0.3.36"
+time = "0.3.47"
